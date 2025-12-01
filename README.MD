@@ -1,6 +1,19 @@
 ## Руководство по запуску
-###	1.	Установить Python 3
-###	2.	Создать виртуальное окружение:
+### 1.  Перед началом запустите Postgresql с такими данными на localhost
+```bash
+POSTGRES_DB: VeLeEk
+```
+```bash
+POSTGRES_PASSWORD: root
+```
+```bash
+POSTGRES_USER: root
+```
+```bash
+ports: 5432:5432
+```
+###	2.	Установить Python 3
+###	3.	Создать виртуальное окружение:
 #### Linux & Mac
 ```bash
 python3 -m venv .venv
@@ -9,7 +22,7 @@ python3 -m venv .venv
 ```bash
 python -m venv .venv
 ```
-###	3.	Активировать виртуальное окружение:
+###	4.	Активировать виртуальное окружение:
 #### Linux & Mac
 ```bash
 source .venv/bin/activate
@@ -22,11 +35,11 @@ source .venv/bin/activate
 ```bash
 pip install --upgrade pip
 ```
-###	4.	Установить зависимости:
+###	6.	Установить зависимости:
 ```bash
 pip install -r requirements.txt
 ```
-###	5. Запуск:
+###	7. Запуск:
 #### Linux & Mac
 ```bash
 python3 main.py
