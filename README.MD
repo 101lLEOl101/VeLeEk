@@ -1,6 +1,11 @@
 ## Руководство по запуску
 ###	1.	Установить Python 3
 ###	2.	Создать виртуальное окружение:
+#### Linux & Mac
+```bash
+python3 -m venv .venv
+```
+#### Windows
 ```bash
 python -m venv .venv
 ```
@@ -18,6 +23,11 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 ###	5. Запуск:
+#### Linux & Mac
+```bash
+python3 main.py
+```
+#### Windows
 ```bash
 python main.py
 ```
