@@ -18,7 +18,11 @@ source .venv/bin/activate
 ```bash
 .venv\Scripts\activate     
 ```
-###	4.	Установить зависимости(запускать в корне проекта):
+###	5.	Обновить pip:
+```bash
+pip install --upgrade pip
+```
+###	4.	Установить зависимости:
 ```bash
 pip install -r requirements.txt
 ```
