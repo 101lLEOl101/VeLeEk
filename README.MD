@@ -35,3 +35,8 @@ python3 main.py
 ```bash
 python main.py
 ```
+## При добавлении новых зависимостей
+### Обновляем requirements.txt
+```bash
+pip freeze > requirements.txt
+```
