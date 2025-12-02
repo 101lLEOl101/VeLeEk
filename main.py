@@ -38,6 +38,7 @@ if __name__ == "__main__":
         generate_bike_data(cursor, 10000)
         generate_ride_data(cursor, 10000)
         generate_payment_data(cursor, 10000)
+        connection.commit()
     except Exception as e:
         print("Ошибка заполнения:",e)
         connection.rollback()
