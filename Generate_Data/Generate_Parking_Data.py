@@ -11,7 +11,7 @@ cities = (
     ('Красноярск', 56.015283, 92.893248),
     ('Челябинск', 55.164442, 61.436843),
     ('Самара', 53.195533, 50.101801),
-    ('Омск', 54.989342, 73.368212)
+    ('Омск', 54.989342, 73.368212),
 )
 
 def generate_parking_data(cursor, count):
@@ -26,3 +26,4 @@ def generate_parking_data(cursor, count):
         count_places = random.randint(5, 50)
         parkings.append((address, width, longitude, count_places))
     cursor.executemany('INSERT INTO "Parking" (address, width, longitude, count_parking_places) VALUES (%s, %s, %s, %s)', parkings)
+    print("Генерация Parking успешна")
