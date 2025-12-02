@@ -1,2 +1,2 @@
 def generate_payment_data(cursor, count):
-    print("Генерация", count, "Payment")
+    print("Начало генерации", count, "Payment")

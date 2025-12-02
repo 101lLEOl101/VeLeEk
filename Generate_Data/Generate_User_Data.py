@@ -1,2 +1,2 @@
 def generate_user_data(cursor, count):
-    print("Генерация",count,"User")
+    print("Начало генерации",count,"User")
