@@ -1,6 +1,5 @@
 from datetime import timedelta
 import random
-
 from faker import Faker
 
 def generate_user_data(cursor, count):
@@ -18,7 +17,7 @@ def generate_user_data(cursor, count):
         sub_ids.append(type_of_subscription_id[0])
 
     users = []
-    for i in range (count):
+    for i in range(count):
         name = fake.name()
         login = fake.user_name()
         hash_password = fake.sha256()
